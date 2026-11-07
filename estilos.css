@@ -1,0 +1,92 @@
+body {
+  font-family: Verdana, sans-serif;
+  background: #e0f2f1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 460px;
+}
+
+h3 {
+  color: #004d40;
+  text-align: center;
+  font-size: 24px;
+}
+
+.progreso {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px 16px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #140576;
+  overflow: hidden;
+}
+
+.barra {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #cb5510;
+}
+
+.texto {
+  position: relative;
+  font-weight: bold;
+}
+
+.tarjeta {
+  background: #390783;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenido {
+  background: #ffffff;
+  border-radius: 14px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.pregunta {
+  font-size: 24px;
+  font-weight: bold;
+  color: #004d40;
+}
+
+.respuesta {
+  font-size: 20px;
+  color: #000000;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button {
+  background: #c60c0f;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

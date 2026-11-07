@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarjetas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div id="app" class="contenedor">
+    <h3>Tarjetas Flash</h3>
+
+    <div class="progreso">
+      <div class="barra" :style="{ width: porcentaje + '%' }"></div>
+      <span class="texto">{{ porcentaje }}%</span>
+      <span class="texto">{{ indice + 1 }} de {{ tarjetas.length }}</span>
+    </div>
+
+    <tarjeta-flash
+      :pregunta="tarjetas[indice].pregunta"
+      :respuesta="tarjetas[indice].respuesta"
+      :mostrar="mostrar"
+      @anterior="anterior"
+      @voltear="voltear"
+      @siguiente="siguiente">
+    </tarjeta-flash>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.prod.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
